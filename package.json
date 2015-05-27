@@ -1,6 +1,6 @@
 {
   "name": "starter-plate",
-  "description": "## Installation 1. `npm install` 2. `gulp`",
+  "description": "## Installation 1. `npm install` ",
   "version": "1.0.0",
   "main": "gulpfile.js",
   "dependencies": {

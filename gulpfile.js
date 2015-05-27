@@ -4,7 +4,6 @@ var gulp = require('gulp'), 
     bower = require('gulp-bower'),
     livereload = require('gulp-livereload'),
     server = require('gulp-server-livereload'),
-    express = require('express'),
     connect = require('gulp-connect');
 
 var config = {
@@ -52,7 +51,6 @@ gulp.task('html', function() { 
 
 gulp.task('watch', function () {
     gulp.watch('./public/**.*').on('change', livereload.changed);
-    gulp.watch('./resources/sass/style.scss').on('change', livereload.changed);
     gulp.watch( './resources/sass/**/*.scss', ['css'] );
     livereload.listen();
 });
@@ -68,6 +66,6 @@ gulp.task('webserver', function() {
 
 });
 
-  gulp.task('default', ['bower', 'icons', 'css','watch','html','webserver']);
+  gulp.task('default', ['bower', 'icons', 'css','html','webserver','watch']);
 
 

@@ -1,0 +1,23 @@
+// Add custom font
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700");
+$font-family-base: 'Open Sans', sans-serif;
+
+// Import bootstrap and fontawesome
+@import "bootstrap";
+@import "font-awesome";
+
+// Bootstrap Starter Template Styles
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.hero {
+  font-size:20px;
+}
+.home {
+  width:392px;
+}
